@@ -26,6 +26,14 @@ class Entry implements Arrayable
     }
 
     /**
+     * @return bool
+     */
+    public function isEmpty()
+    {
+        return empty($this->data);
+    }
+
+    /**
      * @return array
      */
     public function toArray()
