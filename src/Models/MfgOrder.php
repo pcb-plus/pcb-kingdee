@@ -278,12 +278,6 @@ class MfgOrder extends AbstractBillModel implements BillModel
             'comment' => '物料齐套状态',
         ],
         [
-            'attribute' => 'kitting_remark',
-            'column' => 'F_ORA_Remarks',
-            'field' => 'F_ORA_Remarks',
-            'comment' => '物料齐套备注',
-        ],
-        [
             'attribute' => 'smt_start_qty',
             'column' => 'F_ORA_Qty',
             'field' => 'F_ORA_Qty',
