@@ -100,4 +100,17 @@ class Bill implements Arrayable
             $this->entryKey => $this->entries
         ]);
     }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function __get($key)
+    {
+        if (isset($this->bill[$key])) {
+            return $this->bill[$key];
+        }
+
+        return null;
+    }
 }
